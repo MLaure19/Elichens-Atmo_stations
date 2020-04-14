@@ -98,23 +98,9 @@ var lyr_Points_Elichens_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Points_Elichens_6.png" /> Points_Elichens'
             });
-var format_centroides_7 = new ol.format.GeoJSON();
-var features_centroides_7 = format_centroides_7.readFeatures(json_centroides_7, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_centroides_7 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_centroides_7.addFeatures(features_centroides_7);
-var lyr_centroides_7 = new ol.layer.Vector({
-                declutter: true,
-                source:jsonSource_centroides_7, 
-                style: style_centroides_7,
-                interactive: true,
-                title: '<img src="styles/legend/centroides_7.png" /> centroides'
-            });
 
-lyr_IRIS_0.setVisible(true);lyr_Stations_NO2_1.setVisible(false);lyr_Stations_PM10_2.setVisible(false);lyr_Stations_O3_3.setVisible(false);lyr_Stations_BaP_4.setVisible(false);lyr_Stations_PM25_5.setVisible(false);lyr_Points_Elichens_6.setVisible(false);lyr_centroides_7.setVisible(false);
-var layersList = [lyr_IRIS_0,lyr_Stations_NO2_1,lyr_Stations_PM10_2,lyr_Stations_O3_3,lyr_Stations_BaP_4,lyr_Stations_PM25_5,lyr_Points_Elichens_6,lyr_centroides_7];
+lyr_IRIS_0.setVisible(true);lyr_Stations_NO2_1.setVisible(false);lyr_Stations_PM10_2.setVisible(false);lyr_Stations_O3_3.setVisible(false);lyr_Stations_BaP_4.setVisible(false);lyr_Stations_PM25_5.setVisible(false);lyr_Points_Elichens_6.setVisible(false);
+var layersList = [lyr_IRIS_0,lyr_Stations_NO2_1,lyr_Stations_PM10_2,lyr_Stations_O3_3,lyr_Stations_BaP_4,lyr_Stations_PM25_5,lyr_Points_Elichens_6];
 lyr_IRIS_0.set('fieldAliases', {'INSEE_COM': 'INSEE_COM', 'NOM_COM': 'NOM_COM', 'IRIS': 'IRIS', 'CODE_IRIS': 'CODE_IRIS', 'NOM_IRIS': 'NOM_IRIS', 'TYP_IRIS': 'TYP_IRIS', 'surface': 'surface', });
 lyr_Stations_NO2_1.set('fieldAliases', {'Numéro st': 'Numéro st', 'Station': 'Station', 'Polluant': 'Polluant', 'Latitude': 'Latitude', 'Longitude': 'Longitude', });
 lyr_Stations_PM10_2.set('fieldAliases', {'Numéro st': 'Numéro st', 'Station': 'Station', 'Polluant': 'Polluant', 'Latitude': 'Latitude', 'Longitude': 'Longitude', });
@@ -122,7 +108,6 @@ lyr_Stations_O3_3.set('fieldAliases', {'Numéro st': 'Numéro st', 'Station': 'S
 lyr_Stations_BaP_4.set('fieldAliases', {'Numéro st': 'Numéro st', 'Station': 'Station', 'Polluant': 'Polluant', 'Latitude': 'Latitude', 'Longitude': 'Longitude', });
 lyr_Stations_PM25_5.set('fieldAliases', {'Numéro st': 'Numéro st', 'Station': 'Station', 'Polluant': 'Polluant', 'Latitude': 'Latitude', 'Longitude': 'Longitude', });
 lyr_Points_Elichens_6.set('fieldAliases', {'id': 'id', });
-lyr_centroides_7.set('fieldAliases', {'INSEE_COM': 'INSEE_COM', 'NOM_COM': 'NOM_COM', 'IRIS': 'IRIS', 'CODE_IRIS': 'CODE_IRIS', 'NOM_IRIS': 'NOM_IRIS', 'TYP_IRIS': 'TYP_IRIS', 'surface': 'surface', 'longitude': 'longitude', 'latitude': 'latitude', });
 lyr_IRIS_0.set('fieldImages', {'INSEE_COM': 'TextEdit', 'NOM_COM': 'TextEdit', 'IRIS': 'TextEdit', 'CODE_IRIS': 'TextEdit', 'NOM_IRIS': 'TextEdit', 'TYP_IRIS': 'TextEdit', 'surface': 'TextEdit', });
 lyr_Stations_NO2_1.set('fieldImages', {'Numéro st': 'TextEdit', 'Station': 'TextEdit', 'Polluant': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', });
 lyr_Stations_PM10_2.set('fieldImages', {'Numéro st': 'TextEdit', 'Station': 'TextEdit', 'Polluant': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', });
@@ -130,15 +115,13 @@ lyr_Stations_O3_3.set('fieldImages', {'Numéro st': 'TextEdit', 'Station': 'Text
 lyr_Stations_BaP_4.set('fieldImages', {'Numéro st': 'TextEdit', 'Station': 'TextEdit', 'Polluant': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', });
 lyr_Stations_PM25_5.set('fieldImages', {'Numéro st': 'TextEdit', 'Station': 'TextEdit', 'Polluant': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', });
 lyr_Points_Elichens_6.set('fieldImages', {'id': 'TextEdit', });
-lyr_centroides_7.set('fieldImages', {'INSEE_COM': 'TextEdit', 'NOM_COM': 'TextEdit', 'IRIS': 'TextEdit', 'CODE_IRIS': 'TextEdit', 'NOM_IRIS': 'TextEdit', 'TYP_IRIS': 'TextEdit', 'surface': 'TextEdit', 'longitude': 'TextEdit', 'latitude': 'TextEdit', });
 lyr_IRIS_0.set('fieldLabels', {'INSEE_COM': 'no label', 'NOM_COM': 'no label', 'IRIS': 'no label', 'CODE_IRIS': 'no label', 'NOM_IRIS': 'no label', 'TYP_IRIS': 'no label', 'surface': 'no label', });
 lyr_Stations_NO2_1.set('fieldLabels', {'Numéro st': 'no label', 'Station': 'no label', 'Polluant': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', });
 lyr_Stations_PM10_2.set('fieldLabels', {'Numéro st': 'no label', 'Station': 'no label', 'Polluant': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', });
 lyr_Stations_O3_3.set('fieldLabels', {'Numéro st': 'no label', 'Station': 'no label', 'Polluant': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', });
 lyr_Stations_BaP_4.set('fieldLabels', {'Numéro st': 'no label', 'Station': 'no label', 'Polluant': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', });
-lyr_Stations_PM25_5.set('fieldLabels', {'Numéro st': 'no label', 'Station': 'no label', 'Polluant': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', });
+lyr_Stations_PM25_5.set('fieldLabels', {'Numéro st': 'header label', 'Station': 'no label', 'Polluant': 'inline label', 'Latitude': 'inline label', 'Longitude': 'header label', });
 lyr_Points_Elichens_6.set('fieldLabels', {'id': 'no label', });
-lyr_centroides_7.set('fieldLabels', {'INSEE_COM': 'no label', 'NOM_COM': 'no label', 'IRIS': 'no label', 'CODE_IRIS': 'no label', 'NOM_IRIS': 'no label', 'TYP_IRIS': 'no label', 'surface': 'no label', 'longitude': 'no label', 'latitude': 'no label', });
-lyr_centroides_7.on('precompose', function(evt) {
+lyr_Points_Elichens_6.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
